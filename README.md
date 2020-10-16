@@ -26,14 +26,22 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
+--forEach will loop through an array applying a function to the elements(mutates original array), .map returns a new array.
 
 2. Explain the difference between a callback and a higher order function.
+--Higher-order functions recieve a callback function as a parameter.
 
 3. What is closure?
+--closure is the idea that functions close over variables that have been defined within that function.
 
 4. Describe the four rules of the 'this' keyword.
+-implicit-this is referenced within an object and pertains to the object left of the .
+-explicit-this is explicitly bound to an object using .call,.apply
+-window-this is bound to the window or terminal.
+-new-this is bound to the new object being created.
 
 5. Why do we need super() in an extended class?
+-to include methods 
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
