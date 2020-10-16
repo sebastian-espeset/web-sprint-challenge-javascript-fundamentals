@@ -27,7 +27,7 @@ const displayNames = [];
 zooAnimals.forEach(zooAnimals => displayNames.push(zooAnimals.animal_name));
 zooAnimals.forEach(zooAnimals => displayNames.push(zooAnimals.scientific_name));
 //this is wrong, cannot figure out how to do this.
-
+//asdkuhgasjdhgasjdht ajshdg jahsgd 
                 
 /* Request 2: .map()
 
