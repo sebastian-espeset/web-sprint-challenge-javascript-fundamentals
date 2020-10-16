@@ -20,10 +20,6 @@ const zooAnimals = [
 The zoos want to display both the scientific name and the animal name in front of the habitats. Populate the displayNames array with only the animal_name and scientific_name of each animal. displayNames will be an array of strings, and each string should follow this pattern: "Name: Jackal, asiatic, Scientific: Canis aureus."
 
 */
-
-const displayNames = [];
-
-
 // zooAnimals.forEach(zooAnimals => displayNames.push(zooAnimals.animal_name));
 // zooAnimals.forEach(function(element,element2){
 //   displayNames.push(element.animal_name)
@@ -32,8 +28,10 @@ const displayNames = [];
 // zooAnimals.forEach(zooAnimals => displayNames.push(zooAnimals.scientific_name));
 //this is wrong, cannot figure out how to do this...
 
-
 //I DID IT!!! SEE BELOW!
+
+const displayNames = [];
+
 //For each element, push animal name & scientific name! Easy.
 zooAnimals.forEach(function(element){
   displayNames.push(element.animal_name);
@@ -47,8 +45,14 @@ The zoos need a list of all their animal's names (animal_name only) converted to
 
 */
 
-const lowCaseAnimalNames=zooAnimals.map(toLowerCase());
-console.log(lowCaseAnimalNames);
+const lowCaseAnimalNames=zooAnimals.map(function(element){
+  element.animal_name.toLowerCase())
+}
+
+
+
+
+  console.log(lowCaseAnimalNames);
 
 /* Request 3: .filter() 
 
