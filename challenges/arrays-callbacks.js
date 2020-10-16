@@ -24,10 +24,22 @@ The zoos want to display both the scientific name and the animal name in front o
 const displayNames = [];
 
 
-zooAnimals.forEach(zooAnimals => displayNames.push(zooAnimals.animal_name));
-zooAnimals.forEach(zooAnimals => displayNames.push(zooAnimals.scientific_name));
-//this is wrong, cannot figure out how to do this.
-//asdkuhgasjdhgasjdht ajshdg jahsgd 
+// zooAnimals.forEach(zooAnimals => displayNames.push(zooAnimals.animal_name));
+// zooAnimals.forEach(function(element,element2){
+//   displayNames.push(element.animal_name)
+// });
+//^^this pushes JUST the animal_name??How do i get both?
+// zooAnimals.forEach(zooAnimals => displayNames.push(zooAnimals.scientific_name));
+//this is wrong, cannot figure out how to do this...
+
+
+//I DID IT!!! SEE BELOW!
+//For each element, push animal name & scientific name! Easy.
+zooAnimals.forEach(function(element){
+  displayNames.push(element.animal_name);
+  displayNames.push(element.scientific_name);
+});
+
                 
 /* Request 2: .map()
 
